@@ -5,7 +5,6 @@ const AboutUs = () => {
   return (
     <div className="about-page">
       <section className="about-hero">
-        <h1>Anish Project</h1>
         <h1>About FreshMart</h1>
         <p>Delivering freshness to your doorstep since 2024.</p>
       </section>
