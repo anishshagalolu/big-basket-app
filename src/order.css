@@ -1,0 +1,92 @@
+/* Apply base reset and full width background */
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #f0f2f5;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Main wrapper: full width, center content */
+.order-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 40px 16px;
+  background-color: #f0f2f5;
+}
+
+/* Headings */
+.order-container h1,
+.order-container h2 {
+  text-align: center;
+  color: #1a237e;
+  margin-bottom: 20px;
+}
+
+/* Center this entire list */
+.order-container ol {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 960px;
+}
+
+/* Order card */
+.order-container ol > li {
+  background-color: #ffffff;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  padding: 24px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* Order header info */
+.order-container ol > li > p {
+  font-size: 1rem;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+/* Items inside order */
+.order-container ol > li > ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Individual product line */
+.order-container ol > li > ul > li {
+  display: flex;
+  align-items: center;
+  background-color: #e3f2fd;
+  border: 1px solid #bbdefb;
+  border-radius: 10px;
+  padding: 16px;
+  gap: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Make the image larger */
+.order-container ol > li > ul > li img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 2px solid #90caf9;
+}
+
+/* Product name + price */
+.order-container ol > li > ul > li span {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #0d47a1;
+}

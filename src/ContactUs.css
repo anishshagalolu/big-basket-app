@@ -1,0 +1,72 @@
+/* Scoped under .contact-us-page to avoid affecting other pages */
+
+.contact-us-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f4f8;
+}
+
+.contact-us-page .contact-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  width: 100%;
+  max-width: 500px;
+  background: linear-gradient(to bottom, #fff8dc, #ffffff);
+}
+
+.contact-us-page .contact-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #008000;
+  margin-bottom: 0.5rem;
+}
+
+.contact-us-page .contact-subtext {
+  text-align: center;
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.contact-us-page .contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.contact-us-page .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-us-page .form-label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.contact-us-page .form-input,
+.contact-us-page .form-textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.contact-us-page .submit-button {
+  background-color: #059669;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-us-page .submit-button:hover {
+  background-color: #047857;
+}

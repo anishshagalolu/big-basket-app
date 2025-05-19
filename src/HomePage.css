@@ -1,0 +1,120 @@
+/* Only applies inside .homepage wrapper */
+.homepage {
+  width: 100vw;
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #e0f7fa, #f1f8e9);
+  font-family: 'Segoe UI', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Hero section covers full screen */
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 40px 20px;
+  min-height: 100vh;
+  flex-wrap: wrap;
+  background-color: #e8f5e9;
+}
+
+.hero-content {
+  max-width: 500px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  color: #1b5e20;
+}
+
+.hero-content p {
+  margin-top: 10px;
+  font-size: 1.3rem;
+  color: #388e3c;
+}
+
+.shop-now-btn {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #43a047;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.shop-now-btn:hover {
+  background-color: #2e7d32;
+}
+
+.hero-image img {
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Categories */
+.homepage-categories {
+  text-align: center;
+  padding: 60px 20px;
+  background: #ffffff;
+}
+
+.category-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-top: 20px;
+}
+
+.category-card {
+  background: #f1f8e9;
+  padding: 20px 30px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  color: #33691e;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  background-color: #dcedc8;
+}
+
+/* Benefits */
+.homepage-benefits {
+  padding: 60px 20px;
+  background: #f0f4c3;
+  text-align: center;
+}
+
+.benefit-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-top: 30px;
+}
+
+.benefit-card {
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 12px;
+  width: 280px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+}
+
+.benefit-card h3 {
+  color: #558b2f;
+  margin-bottom: 10px;
+}
+
+.benefit-card p {
+  color: #33691e;
+  font-size: 1rem;
+}
