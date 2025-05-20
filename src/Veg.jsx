@@ -84,17 +84,24 @@ function Veg()
                     {vegListItems}
                 </ol>
                 {/* Pagination Controls */}
-                <div className="pagination">
-                    {Array.from({ length: totalPages }, (_, i) => (
-                        <button
-                            key={i + 1}
-                            onClick={() => handlePageChange(i + 1)}
-                            className={currentPage === i + 1 ? 'active' : ''}
-                        >
-                            {i + 1}
-                        </button>
-                    ))}
-                </div>
+                 <div>
+        <button onClick={() => setCurrentPage(currentPage - 1)} disabled={currentPage === 1}>
+          Previous
+        </button>
+
+        {Array.from({ length: totalPages }, (_, index) => (
+          <button
+            key={index}
+            onClick={() => setCurrentPage(index + 1)}
+          >
+            {index + 1}
+          </button>
+        ))}
+
+        <button onClick={() => setCurrentPage(currentPage + 1)} disabled={currentPage === totalPages}>
+          Next
+        </button>
+      </div>
             </div>
         </div>
     )
