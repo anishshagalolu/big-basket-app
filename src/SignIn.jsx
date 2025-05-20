@@ -1,7 +1,7 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import { useDispatch } from 'react-redux';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { loginUser } from './store';
 import './SignIn.css'; // Import as module
 
@@ -36,7 +36,7 @@ function SignIn() {
         </button>
       </form>
       <p className="text">
-        New User? <a href="/SignUp" className="link">Sign Up</a>
+        New User? <Link to="/signup">Sign Up</Link>
       </p>
     </div>
   );

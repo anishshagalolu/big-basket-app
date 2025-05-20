@@ -43,7 +43,7 @@ function App() {
               <button onClick={()=>dispatch(logOut())}>Log Out</button>
               </div>
           ):(
-            <Link to='/SignIn'>Sign In</Link>
+            <Link to='/signin'>Sign In</Link>
           )}
 
         </div>
@@ -61,8 +61,8 @@ function App() {
           <Route path="/Order" element={<Orders />} />
           <Route path="/AboutUs" element={<AboutUs />} />
           <Route path="/ContactUs" element={<ContactUs />} />
-          <Route path="/SignIn" element={<SignIn />} />
-          <Route path="/SignUp" element={<SignUp />}/>
+          <Route path="/signin" element={<SignIn />} />
+          <Route path="/signup" element={<SignUp />}/>
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </div>
