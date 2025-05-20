@@ -3,7 +3,7 @@ import { useForm } from 'react-hook-form';
 import { useDispatch } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
 import { loginUser } from './store';
-import './SignIn.css'; // Import as module
+import './SignIn.css';
 
 function SignIn() {
   const { register, handleSubmit } = useForm();

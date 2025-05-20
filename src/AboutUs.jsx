@@ -1,7 +1,7 @@
 import React from "react";
 import "./AboutUs.css"; // Scoped under .about-page
 
-const AboutUs = () => {
+function AboutUs (){
   return (
     <div className="about-page">
       <section className="about-hero">

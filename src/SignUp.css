@@ -1,0 +1,65 @@
+.signup-container {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 25px 30px;
+  background-color: #f8f8f8;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", sans-serif;
+}
+
+.signup-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.signup-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-container input[type="text"],
+.signup-container input[type="password"],
+.signup-container input[type="email"],
+.signup-container input[type="number"],
+.signup-container select {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.signup-container select {
+  background-color: #fff;
+}
+
+.signup-container label {
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.signup-container .radio-group {
+  margin-bottom: 15px;
+}
+
+.signup-container .radio-group label {
+  margin-right: 10px;
+  font-weight: normal;
+}
+
+.signup-container button[type="submit"] {
+  padding: 12px;
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+.signup-container button[type="submit"]:hover {
+  background-color: #0056b3;
+}
