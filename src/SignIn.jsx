@@ -3,7 +3,7 @@ import { useForm } from 'react-hook-form';
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { loginUser } from './store';
-import styles from './SignIn.css'; // Import as module
+import './SignIn.css'; // Import as module
 
 function SignIn() {
   const { register, handleSubmit } = useForm();
@@ -16,27 +16,27 @@ function SignIn() {
   };
 
   return (
-    <div className={styles.container}>
+    <div className="container">
       <h2>User Sign In</h2>
       <form onSubmit={handleSubmit(myFunc)}>
         <input
           type="text"
           placeholder="Username"
           {...register('username')}
-          className={styles.input}
+         
         />
-        <input
+        <input  className='input'
           type="password"
           placeholder="Password"
           {...register('password')}
-          className={styles.input}
+          
         />
-        <button type="submit" className={styles.button}>
+        <button type="submit" className="button">
           Sign In
         </button>
       </form>
-      <p className={styles.text}>
-        New User? <a href="SignUp" className={styles.link}>Sign Up</a>
+      <p className="text">
+        New User? <a href="SignUp" className="link">Sign Up</a>
       </p>
     </div>
   );
