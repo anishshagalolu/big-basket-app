@@ -1,13 +1,9 @@
 import React from "react";
 import "./ContactUs.css";
-
-export default function ContactUs() {
-  let handleContact=()=>{
-  alert("Thank You for Your response we will try to fix it as soon as possible");
-  }
+ function ContactUs() {
   return (
     <div className="contact-us-page">
-      <form onSubmit={handleContact()}>
+      <form>
       <div className="contact-card">
         <h1 className="contact-title">Contact Us</h1>
         <p className="contact-subtext">
@@ -41,3 +37,4 @@ export default function ContactUs() {
     </div>
   );
 }
+export default ContactUs;
