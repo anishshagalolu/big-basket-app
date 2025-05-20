@@ -36,7 +36,7 @@ function SignIn() {
         </button>
       </form>
       <p className="text">
-        New User? <a href="SignUp" className="link">Sign Up</a>
+        New User? <a href="/SignUp" className="link">Sign Up</a>
       </p>
     </div>
   );

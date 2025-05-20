@@ -62,8 +62,8 @@ function App() {
           <Route path="/AboutUs" element={<AboutUs />} />
           <Route path="/ContactUs" element={<ContactUs />} />
           <Route path="/SignIn" element={<SignIn />} />
-          <Route path="SignUp" element={<SignUp />}/>
-          <Route path="/*" element={<PageNotFound />} />
+          <Route path="/SignUp" element={<SignUp />}/>
+          <Route path="*" element={<PageNotFound />} />
         </Routes>
       </div>
     </BrowserRouter>
