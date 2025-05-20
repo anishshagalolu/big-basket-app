@@ -11,7 +11,7 @@ function SignUp() {
     const myFunc=(data)=>{
         dispatch(registerUser(data));
         alert('Registration Successful!');
-        navigate('/SignIn');
+        navigate('/signin');
     }
   return (
     <>
