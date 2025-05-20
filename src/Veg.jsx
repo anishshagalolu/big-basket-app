@@ -13,7 +13,7 @@ function Veg()
     
     const[selectedRange,setSelectedRange]=useState([])
     const[ currentPage, setCurrentPage ] = useState(1);
-    const itemsPerPage = 6; // you can adjust the number of items per page
+    const itemsPerPage = 5; 
 
     const priceRanges=[
         {value:'Rs 10 to Rs 50',min:10,max:50},
@@ -84,7 +84,7 @@ function Veg()
                     {vegListItems}
                 </ol>
                 {/* Pagination Controls */}
-                 <div>
+                 <div className="pagenation">
         <button onClick={() => setCurrentPage(currentPage - 1)} disabled={currentPage === 1}>
           Previous
         </button>
