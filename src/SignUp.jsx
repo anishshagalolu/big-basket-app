@@ -1,4 +1,8 @@
+import { useDispatch } from 'react-redux';
 import './SignUp.css'; // Import the CSS file
+import { useNavigate } from 'react-router-dom';
+import { useForm } from 'react-hook-form';
+import { registerUser } from './store';
 
 function SignUp() {
   let { register, handleSubmit } = useForm();
