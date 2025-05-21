@@ -10,6 +10,8 @@ function Nonveg() {
     const nonvegProducts = useSelector(globalState => globalState.products.nonveg);
     const dispatch = useDispatch();
         const[selectedRange,setSelectedRange]=useState([])
+        const[ currentPage, setCurrentPage ] = useState(1);
+        const itemsPerPage = 5; 
            const priceRanges=[
             {value:'Rs 100 to Rs 200',min:100,max:200},
             {value:'Rs 200 to Rs 400',min:200,max:400},
@@ -32,9 +34,12 @@ function Nonveg() {
            nonvegProducts:nonvegProducts.filter(product=>
             activeRanges.some(range=>
                 product.price>=range.min && product.price<=range.max))
+                 const totalPages = Math.ceil(filtered.length / itemsPerPage);
+                 const paginatedItems = filtered.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
+
     
 
-    const nonvegListItems = filtered.map((product, index) => (
+    const nonvegListItems = paginatedItems.map((product, index) => (
         <li key={index}>
             <img src={product.image} alt={product.name} />
             <h3>{product.name}</h3>
@@ -73,7 +78,27 @@ function Nonveg() {
                 <ol>
                     {nonvegListItems}
                 </ol>
-            </div>
+            
+             <div className="pagination">
+        <button onClick={() => setCurrentPage(currentPage - 1)} disabled={currentPage === 1}>
+          Previous
+        </button>
+
+        {Array.from({ length: totalPages }, (_, index) => (
+          <button
+            key={index}
+            onClick={() => setCurrentPage(index + 1)}
+            className={currentPage === index + 1 ? 'active' : ''}
+          >
+            {index + 1}
+          </button>
+        ))}
+
+        <button onClick={() => setCurrentPage(currentPage + 1)} disabled={currentPage === totalPages}>
+          Next
+        </button>
+      </div>
+      </div>
             </div>
     );
 }

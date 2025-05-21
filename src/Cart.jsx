@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from 'react-redux';
-import './Cart.css'; // Make sure this is correctly imported
+import './Cart.css';
 import { DecCart, IncCart, orderDetails, Remove, RemoveCart } from './store';
 import { useEffect, useRef, useState } from 'react';
 import emailjs from 'emailjs-com';
@@ -135,7 +135,7 @@ const shipping=50;
       name: item.name,
       price: (item.price * item.quantity).toFixed(2),
       units: item.quantity,
-      image:item.image
+
     })),
     cost: {
       shipping: shipping,
