@@ -55,7 +55,7 @@ initialState:{
         {name:'Lassi',price:80.45,image:"/images/lassi.jpeg"},
         {name:'Milk Maid',price:120.45,image:"/images/milkm.jpeg"},
         {name:'Butter Milk',price:82.45,image:"/images/butterm.jpeg"},
-        {name:'Paneer', price:75.20 , image:"/images/paneer.jpg"}
+        {name:'Paneer', price:75.20,image:"/images/paneer.jpg"},
 
     ]
 },
