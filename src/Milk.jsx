@@ -68,7 +68,7 @@ function Milk()
         
        <div className="veg-products">
         <ToastContainer position="top-right" autoClose={3000} />
-    <h1 style={{ textAlign: "center", color: "green" }}>Milk Items</h1>
+    <h1 style={{ textAlign: "center", color: "blue" }}>Milk Items</h1>
     <hr />
     <ol>
       { milkListItems}

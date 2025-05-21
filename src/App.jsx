@@ -49,9 +49,9 @@ function App() {
         </div>
       </nav>
 
-      {/* Content with top padding so it's not hidden behind navbar */}
       <div style={{ paddingTop: "70px" }}>
         <Routes>
+          <Route path="/" element={<Home />} />
           <Route path="/Home" element={<Home />} />
           <Route path="/Veg" element={<Veg />} />
           <Route path="/Nonveg" element={<Nonveg />} />
@@ -63,7 +63,7 @@ function App() {
           <Route path="/ContactUs" element={<ContactUs />} />
           <Route path="/signin" element={<SignIn />} />
           <Route path="/signup" element={<SignUp />}/>
-          <Route path="*" element={<PageNotFound />} />
+          <Route path="/*" element={<PageNotFound />} />
         </Routes>
       </div>
     </BrowserRouter>
