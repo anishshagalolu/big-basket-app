@@ -90,9 +90,9 @@ function Cart()
                 <p>Quantity: {item.quantity}</p>
             </div>
             <div className="cart-buttons">
-                <button onClick={() => {dispatch(IncCart(item)); toast.success('Items Added In Cart')}}>+</button>
-                <button onClick={() => {dispatch(DecCart(item)); toast.error('Items Reduced From Cart')  }}>-</button>
-                <button onClick={() =>{ dispatch(Remove(item)); toast.error('Item Removed From Cart')}}>Remove</button>
+                <button onClick={() => {dispatch(IncCart(item)); toast.success(`${item.name} Added In Cart`)}}>+</button>
+                <button onClick={() => {dispatch(DecCart(item)); toast.error(`${item.name} Reduced From Cart`)  }}>-</button>
+                <button onClick={() =>{ dispatch(Remove(item)); toast.error(`${item.name} Removed From Cart`)}}>Remove</button>
             </div>
             
         </li>

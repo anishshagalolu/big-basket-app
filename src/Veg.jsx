@@ -13,7 +13,7 @@ function Veg()
     
     const[selectedRange,setSelectedRange]=useState([])
     const[ currentPage, setCurrentPage ] = useState(1);
-    const itemsPerPage = 8; 
+    const itemsPerPage = 5; 
 
     const priceRanges=[
         {value:'Rs 10 to Rs 50',min:10,max:50},
