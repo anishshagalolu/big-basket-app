@@ -44,7 +44,7 @@ function Nonveg() {
             <img src={product.image} alt={product.name} />
             <h3>{product.name}</h3>
             <p>{product.price} Rs</p>
-            <button onClick={() =>{ dispatch(AddToCart(product)); toast.success('Item is Added to Cart');}}>Add To Cart</button>
+            <button onClick={() =>{ dispatch(AddToCart(product)); toast.success(`${product.name} is Added to Cart`);}}>Add To Cart</button>
         </li>
     ));
 

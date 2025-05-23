@@ -45,7 +45,7 @@ function Veg()
             <img src={product.image} alt={product.name}/>
             <h3>{product.name}</h3><p>{product.price} Rs</p>
             
-            <button onClick={()=>{dispatch(AddToCart(product)); toast.success('Item Added to Cart')}}>Add to Cart</button>
+            <button onClick={()=>{dispatch(AddToCart(product)); toast.success(`${product.name} is Added to Cart`)}}>Add to Cart</button>
         </li>
     ))
     return(

@@ -13,7 +13,7 @@ function Veg()
     
     const[selectedRange,setSelectedRange]=useState([])
     const[ currentPage, setCurrentPage ] = useState(1);
-    const itemsPerPage = 5; 
+    const itemsPerPage = 8; 
 
     const priceRanges=[
         {value:'Rs 10 to Rs 50',min:10,max:50},
@@ -51,7 +51,7 @@ function Veg()
         <li key={index}>
             <img src={product.image} alt={product.name}/>
             <h3>{product.name}</h3><p>{product.price} Rs</p>
-            <button onClick={()=>{dispatch(AddToCart(product)); toast.success('Item is Added to Cart')}}>Add to Cart</button>
+            <button onClick={()=>{dispatch(AddToCart(product)); toast.success(`${product.name} is Added to Cart`)}}>Add to Cart</button>
         </li>
     ));
 
