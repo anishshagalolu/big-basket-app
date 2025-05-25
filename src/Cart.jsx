@@ -135,6 +135,7 @@ const shipping=50;
       name: item.name,
       price: (item.price * item.quantity).toFixed(2),
       units: item.quantity,
+      image_url: item.image,
 
     })),
     cost: {

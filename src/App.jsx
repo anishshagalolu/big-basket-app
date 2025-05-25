@@ -28,6 +28,7 @@ function App() {
       {/* Fixed Top Bootstrap Navbar */}
       <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div className="container-fluid">
+          <img src="https://cdn.dribbble.com/users/5821386/screenshots/16016909/fresh_mart_logo.png" height="60px"/>
           <Link to="/Home" className="nav-link">🏠 Home</Link>
           <Link to="/Veg" className="nav-link">🥦 Veg Items</Link>
           <Link to="/Nonveg" className="nav-link">🍗 Non Veg Items</Link>
